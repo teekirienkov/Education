@@ -3,8 +3,8 @@
 
 
 class Rectangle {
-    constructor(height, width) {
-        this.height = height;
+    constructor(height, width = 20) {    // в width присвоен параметр по умолчанию!
+        this.height = height;            // То есть если данные не будут получены, он будет равен 20
         this.width = width;
     }
     calcArea() {
