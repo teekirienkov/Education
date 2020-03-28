@@ -24,6 +24,8 @@ inputRub.addEventListener('input', () => {
             let data = JSON.parse(request.response);
 
             inputUsd.value = inputRub.value / data.usd;
+        } else {
+            inputUsd.value = 'Что-то пошло не так!';
         }
     });
 });
