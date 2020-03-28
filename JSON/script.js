@@ -8,5 +8,13 @@ let options = {
     }
 };
 
+// Перевод объекта и других данных в JSON формат
 
 console.log(JSON.stringify(options));
+
+// В JSON формате всегда всё в ""!
+
+
+// С помощью parse обратное действие! JSON переводит в объект
+
+console.log(JSON.parse(JSON.stringify(options)));
