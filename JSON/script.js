@@ -16,5 +16,6 @@ console.log(JSON.stringify(options));
 
 
 // С помощью parse обратное действие! JSON переводит в объект
+// Таким образом происходит общение с клиентом
 
 console.log(JSON.parse(JSON.stringify(options)));
