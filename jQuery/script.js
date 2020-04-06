@@ -29,3 +29,6 @@ $(document).ready(function() {
         );
     });
 });
+
+// $.ajax - fetch
+// animations - Уже есть в обычном JavaScript
