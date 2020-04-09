@@ -1,7 +1,5 @@
 // Деструктуризация объекта
 
-
-
 let objUser = {
     name: {
         first: 'Sam',
@@ -15,4 +13,12 @@ let objUser = {
 // деструктурированы только first и second
 const {name: {first, second}, age, status} = objUser;
 
-console.log(second, age, status);
+console.log(second, age, status); // second = Smith, age = 20, status = login
+
+// Деструктуризация массива
+
+let arr = [1, 2, 3, 4, 5];
+
+const [a, b, c, d] = arr;
+
+console.log(a, b, c); // a = 1, b = 2, c = 3
