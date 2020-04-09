@@ -4,8 +4,8 @@
 
 let objUser = {
     name: {
-        first: 'default',
-        second: 'smith'
+        first: 'Sam',
+        second: 'Smith'
     },
     age: 20,
     status: 'login'
