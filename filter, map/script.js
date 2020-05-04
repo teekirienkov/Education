@@ -34,6 +34,7 @@ answers = answers.map((item) => {
     return item.toLowerCase();
 });
 
-console.log(answers); // = ivan, anna, vlad, text
+console.log(answers);  // = ivan, anna, vlad, text
 
 // callback можно писать в одну строку, тогда return не нужен
+
