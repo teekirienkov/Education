@@ -11,5 +11,6 @@
     "jquery": true,
     "esversion": 6,
     "-W117": true,
-    "-W101": true
+    "-W101": true,
+    "-W102": true
 }
