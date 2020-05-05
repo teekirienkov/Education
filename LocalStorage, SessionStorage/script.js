@@ -58,3 +58,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     localStorage.setItem('persone', serializedPersone);
 });
+
+// Session Storage
+// Аналог, только сохраняется в текущей сессии
+let value = 'values'
+
+sessionStorage.setItem('key', value);
