@@ -11,17 +11,18 @@ const people = [
 // }
 
 // forEach, принимает следующие параметры в функции - (item, index, arr)
-people.forEach((item) => {   // 1) item - это каждый элемент в массиве, 2) index - индекс, 3) arr - весь массив
-	console.log(item.age); // 19, 45, 22 и т.д.
-})
+// Выполняет указанную функцию один раз для каждого элемента в массиве.
+// people.forEach((item) => {   // 1) item - это каждый элемент в массиве, 2) index - индекс, 3) arr - весь массив
+// 	console.log(item.age) // 19, 45, 22 и т.д.
+// })
 
 // Map
 // С помощью этого метода можно как угодно трансформировать данные 
-// и заносить их в новый массив newPeople
+// и заносить их в новый массив
 const newPeople = people.map((person) => {
-	return person;
+	return person.name // либо `name ${person.name} age ${person.age}, понятно какой получится массив`
 })
-console.log(newPeople) // array people
+console.log(newPeople) // В этом массиве теперь будут только имена из people
 
 // Filter
 
