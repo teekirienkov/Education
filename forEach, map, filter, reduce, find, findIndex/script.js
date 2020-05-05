@@ -9,8 +9,8 @@ const people = [
 // for (let i = 0; i < people.length; i++) {
 // 	console.log(people[i])
 // }
-// forEach
-people.forEach((item) => {   // forEach принимает следующие параметры в функции - (item, index, arr)
+// forEach, принимает следующие параметры в функции - (item, index, arr)
+people.forEach((item) => {   // 1) item - это каждый элемент в массиве, 2) index - индекс, 3) arr - весь массив
 	console.log(item.age);
 })
 // Map
