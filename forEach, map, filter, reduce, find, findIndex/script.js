@@ -5,3 +5,20 @@ const people = [
 	{ name: 'Alex', age: '37', budget: '30000'},
 	{ name: 'Vladilen', age: '25', budget: '250000'}
 ]
+// for
+// for (let i = 0; i < people.length; i++) {
+// 	console.log(people[i])
+// }
+// forEach
+people.forEach((item) => {   // forEach принимает следующие параметры в функции - (item, index, arr)
+	console.log(item.age);
+})
+// Map
+
+// Filter
+
+// Reduce
+
+// Find
+
+// FindIndex
