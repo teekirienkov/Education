@@ -33,10 +33,33 @@ const people = [
 // Reduce
 // Применяет функцию reducer к каждому элементу массива (слева-направо), возвращая одно результирующее значение.
 // 1) Первый параметр в функции - total, 2) второй параметр - итерируемый элемент в массиве
-const amount = people.reduce((total, person) => total + person.budget, 0) // второй параметр не у функции, а у reduce, это начальное значение total (0)
-console.log(amount) // получаем сумму всего бюджета
+// const amount = people.reduce((total, person) => total + person.budget, 1000000) // второй параметр не у функции, а у reduce, это начальное значение total (0)
+// console.log(amount) // получаем сумму всего бюджета
+// // Результат по умолчанию можно менять, соответственно итоговый результат будет изменен
 
-// Find
+// // Find
+// // Метод служит для поиска определенных элементов
+// const findUser = people.find((person) => person.name === 'Timur')
+// console.log(findUser) // выводится элемент массива
+
+// // FindIndex
+// // Метод служит для поиска определенного индекса элемента
+// const findUserIndex = people.findIndex((person) => person.name === 'Timur')
+// console.log(findUserIndex) // вывелся индекс элемента в массиве = 0
 
 
-// FindIndex
+
+// --- Practice ---
+
+const statePeople = people
+	.filter((person) => person.budget > 100000)					// в этом методе мы фильтруем данные по условию
+	.map(person => {																		// в этом методе мы как-то преобразовываем данные
+		return {
+			info: `${person.name}, ${person.age}`,
+			infoBudget: 'Бюджет пользователя больше 100к',
+			budget: person.budget
+		}
+	})
+	.reduce((total, person) => total + person.budget, 0) // после этого метода выводится только общий бюджет
+
+console.log(statePeople) // новый массив объектов с обновленными пользователями
