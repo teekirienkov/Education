@@ -1,5 +1,5 @@
-<h1>Общие понятия в алгоритмах</h1>
+<h3>Бинарный поиск</h3>
+<p>Скорость обычного поиска и бинарного растет с разной скоростью</p>
+<p>Таким образом, с увеличениемсписка бинарный поиск внезапно начинает работать гораздо быстрее!</p>
+<a href="https://github.com/teekirienkov/EducationJS/blob/master/Algorithms/Introduction/binarySearch.js">javascript code</a>
 
-<p>Алгоритмом называется набор инструкций для выполнения некоторой задачи.</p>
-
-<a href="https://github.com/teekirienkov/EducationJS/blob/master/Algorithms/Introduction/binarySearch.js">Бинарный поиск</a>
