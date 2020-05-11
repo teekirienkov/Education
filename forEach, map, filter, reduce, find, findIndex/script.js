@@ -52,7 +52,6 @@ console.log(findUserIndex) // вывелся индекс элемента в м
 
 
 // --- Practice ---
-
 const statePeople = people
 	.filter((person) => person.budget > 100000)					// в этом методе мы фильтруем данные по условию
 	.map(person => {																		// в этом методе мы как-то преобразовываем данные
