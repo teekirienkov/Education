@@ -6,9 +6,9 @@
 // Например - телефонная книга отсортирована в алфавитном порядке
 
 let low,   // low - начало массива
-		mid, 	 // mid - центр массива
-		high,  // high - конец массива
-		guess;
+	mid, 	 // mid - центр массива
+	high,  // high - конец массива
+	guess;
 		
 function binarySearch(list, item) {
 	low = 0,   
@@ -22,13 +22,13 @@ function binarySearch(list, item) {
 			return mid;												// останавливаем функцию и возвращаем mid
 		}
 
-		if (guess > item) {									// Много
+		if (guess > item) {			// Много
 			high = mid - 1;
-		} else {														// Мало
+		} else {								// Мало
 			low = mid + 1;
 		}
 	}
-	return null;													// Значение не существует
+	return null;							// Значение не существует
 }
 
 const array = [1, 3, 5, 7, 9];
